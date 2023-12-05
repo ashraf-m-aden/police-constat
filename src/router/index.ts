@@ -1,11 +1,22 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import HomePage from '../views/HomePage.vue'
-
+import ConstatList from '../views/constats/ConstatList.vue';
+import ConstatDetails from '../views/constats/ContatDetails.vue';
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'home',
     component: HomePage
+  },
+  {
+    path: '/constats',
+    name: 'constat',
+    component: ConstatList
+  },
+  {
+    path: '/constat-details/:id',
+    name: 'constat details',
+    component: ConstatDetails
   },
   // {
   //   path: '/about',

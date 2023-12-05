@@ -1,52 +1,60 @@
 <template>
   <div>
     <header class="py-3 mb-4 border-bottom">
-      <div class="  d-flex align-items-center ">
-            <a 
-          href="/"
-          class="logo mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
-          <img src="../assets/logo.jpeg" class="bi me-2"  height="100" />
+      <div class="d-flex align-items-center">
+        <a href="/" class="logo ">
+          <router-link to="/">
+            <img src="../assets/logo.jpeg" class="bi me-2" height="100" />
+          </router-link>
         </a>
-   
-    
-      </div>
+        </div>
     </header>
-    <nav class="py-2 bg-body-tertiary border-bottom">
-      <div class=" d-flex flex-wrap">
+    <nav class="menu">
+      <div class="d-flex flex-wrap">
         <ul class="nav me-auto">
           <li class="nav-item">
-            <a
-              href="#"
-              class="nav-link link-body-emphasis px-2 active"
-              aria-current="page"
-              >Acceuil</a
+            <router-link to="/">
+              <a href="#" class="nav-link px-2 active" aria-current="page"
+                >Acceuil</a
+              ></router-link
             >
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link link-body-emphasis px-2">Constats</a>
+            <router-link to="/constats"
+              ><a href="#" class="nav-link px-2">Constats</a></router-link
+            >
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link link-body-emphasis px-2">Statistiques</a>
+            <a href="#" class="nav-link px-2">Statistiques</a>
           </li>
-   
         </ul>
         <ul class="nav">
           <li class="nav-item">
-            <a href="#" class="nav-link link-body-emphasis px-2">Se connecter</a>
+            <a href="#" class="nav-link px-2">Se connecter</a>
           </li>
-        
         </ul>
       </div>
     </nav>
-   
   </div>
 </template>
 
 <script setup lang="ts"></script>
 
-<style scoped>
-
-.logo{
-    margin: auto;
+<style scoped lang="scss">
+.logo {
+  margin: auto;
 }
- </style>
+.menu {
+  // py-2 bg-body-tertiary border-bottom
+
+  background-color: rgba(38, 160, 204, $alpha: 1);
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: white;
+}
+a {
+  color: white;
+  font-size: medium;
+  font-weight: 600;
+}
+</style>

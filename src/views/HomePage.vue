@@ -14,37 +14,37 @@
                             </tr>
                         </thead>
                         <tbody class="">
-                            <tr>
+                            <tr @click="goToDetails">
                                 <td>Jeudi 9 Avril 2020</td>
                                 <td>Ambouli</td>
                                 <td>Materiel</td>
                                 <td>Sans</td>
                             </tr>
-                            <tr>
+                            <tr @click="goToDetails">
                                 <td>Jeudi 9 Avril 2020</td>
                                 <td>Ambouli</td>
                                 <td>Materiel</td>
                                 <td>Sans</td>
                             </tr>
-                            <tr>
+                            <tr @click="goToDetails">
                                 <td>Jeudi 9 Avril 2020</td>
                                 <td>Ambouli</td>
                                 <td>Materiel</td>
                                 <td>Sans</td>
                             </tr>
-                            <tr>
+                            <tr @click="goToDetails">
                                 <td>Jeudi 9 Avril 2020</td>
                                 <td>Ambouli</td>
                                 <td>Materiel</td>
                                 <td>Sans</td>
                             </tr>
-                            <tr>
+                            <tr @click="goToDetails">
                                 <td>Jeudi 9 Avril 2020</td>
                                 <td>Ambouli</td>
                                 <td>Materiel</td>
                                 <td>Sans</td>
                             </tr>
-                            <tr>
+                            <tr @click="goToDetails">
                                 <td>Jeudi 9 Avril 2020</td>
                                 <td>Ambouli</td>
                                 <td>Materiel</td>
@@ -70,25 +70,25 @@
                             </tr>
                         </thead>
                         <tbody class="">
-                            <tr>
+                            <tr @click="goToDetails">
                                 <td>Jeudi 9 Avril 2020</td>
                                 <td>Ambouli</td>
                                 <td>Feu rouge</td>
                                 <td>524D100</td>
                             </tr>
-                            <tr>
+                            <tr @click="goToDetails">
                                 <td>Jeudi 9 Avril 2020</td>
                                 <td>Ambouli</td>
                                 <td>Feu rouge</td>
                                 <td>524D100</td>
                             </tr>
-                            <tr>
+                            <tr @click="goToDetails">
                                 <td>Jeudi 9 Avril 2020</td>
                                 <td>Ambouli</td>
                                 <td>Feu rouge</td>
                                 <td>524D100</td>
                             </tr>
-                            <tr>
+                            <tr @click="goToDetails">
                                 <td>Jeudi 9 Avril 2020</td>
                                 <td>Ambouli</td>
                                 <td>Feu rouge</td>
@@ -106,15 +106,18 @@
 </template>
 
 <script setup lang="ts">
+import {  useRouter } from 'vue-router';
+const router = useRouter()
 
+const goToDetails = ()=>{
+    router.push('/constat-details/55146436');
+}
 </script>
 
-<style scoped lang="scss">
+<style scopped lang="scss">
 .row{padding-top: 20px;
 margin-bottom: 50px;}
-.col-12{
-    align-items: start;
-}
+
 h4{
     margin-bottom: 30px;
     
@@ -126,7 +129,16 @@ h4{
 tbody>tr{
     cursor: pointer;
     &:hover{
-        border: solid 1px blue;
+     td{
+        &:last-child{
+            &::after{
+                content: '',
+                
+            }
+        }
+     }
+        
+      
     }
 }
 </style>
