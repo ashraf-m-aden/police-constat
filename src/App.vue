@@ -1,14 +1,14 @@
 
 <template>
 <header-layout></header-layout>
-<sidebar-layout></sidebar-layout>
   <router-view />
+<footer-layout></footer-layout>
 </template>
 
 
 <script setup lang="ts">
 import HeaderLayout from './layout/HeaderLayout.vue';
-import SidebarLayout from './layout/SidebarLayout.vue';
+import FooterLayout from './layout/FooterLayout.vue';
 
 </script>
 
