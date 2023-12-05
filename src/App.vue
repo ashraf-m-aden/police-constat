@@ -1,11 +1,20 @@
+
 <template>
-  <!-- <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav> -->
+<header-layout></header-layout>
+<sidebar-layout></sidebar-layout>
   <router-view />
 </template>
 
+
+<script setup lang="ts">
+import HeaderLayout from './layout/HeaderLayout.vue';
+import SidebarLayout from './layout/SidebarLayout.vue';
+
+</script>
+
+<style scoped>
+
+</style>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
