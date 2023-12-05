@@ -1,11 +1,7 @@
 <template>
-  <footer class=" fixed-bottom d-flex justify-content-center  align-items-center py-3 my-4 border-top">
-    <div class="col-md-4 d-flex align-items-center">
-      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-      </a>
-      <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Police Nationale de Djibouti</span>
-    </div>
+  <footer class="">
+     
+      <span class="mb-3 mb-md-0 ">&copy; 2024 Police Nationale de Djibouti</span>
 
 
   </footer>
@@ -16,5 +12,19 @@
 </script>
 
 <style scoped>
-
+footer{
+    /* bg-white fixed-bottom d-flex justify-content-center  align-items-center py-3 border-top */
+    background-color: green;
+    border-top: dashed  1px black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: large;
+    margin-top: 50px;
+    
+}
 </style>

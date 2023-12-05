@@ -168,118 +168,8 @@ p {
     }
 }
 /*btn btn-primary*/
-.btn-primary {
-    color: $white-color;
-    background-color: $light-green-color;
-    box-shadow: 0 13px 27px 0 rgba(68, 206, 111, .25);
 
-    &:hover, &:focus, &:active {
-        color: $white-color;
-        background: $black-color;
-        transform: translateY(-5px);
-        box-shadow: 0 13px 27px 0 rgba(198, 121, 227, .25);
-    }
-    &.focus, &:focus {
-        box-shadow: unset;
-    }
-    &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
-        box-shadow: unset;
-    }
-    &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-        color: $white-color;
-        background: $black-color;
-        transform: translateY(-5px);
-        box-shadow: 0 13px 27px 0 rgba(198, 121, 227, .25);
-    }
-    &.disabled, &:disabled {
-        color: $white-color;
-        background-color: $light-green-color;
-        box-shadow: 0 13px 27px 0 rgba(68, 206, 111, .25);
-        opacity: 1;
 
-        &:hover, &:focus {
-            background: $black-color;
-            box-shadow: 0 13px 27px 0 rgba(198, 121, 227, .25);
-        }
-    }
-}
-.btn {
-    font: {
-        weight: 600;
-        size: 14px;
-    }
-    border: none;
-    padding: 15px 40px;
-    position: relative;
-    border-radius: 4px;
-    z-index: 1;
-    text-transform: uppercase;
-    transition: $transition;
-
-    &::after, &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        height: 100%;
-        width: 0;
-        transition: $transition;
-        background: $purple-color;
-        z-index: -1;
-    }
-    &::after {
-        left: 0;
-        border-radius: 4px 0 0 4px;
-    }
-    &::before {
-        right: 0;
-        border-radius: 0 4px 4px 0;
-    }
-    &:hover {
-        &::after, &::before {
-            width: 50%;
-        }
-    }
-}
-/*btn-secondary*/
-.btn {
-    &.btn-secondary {
-        text-transform: capitalize;
-        border-radius: 0;
-        background-color: $light-green-color;
-        padding: 13px 30px;
-        box-shadow: 5px 5px 5px #a6f5be;
-        margin: {
-            right: 5px;
-            bottom: 5px;
-        };
-        font: {
-            size: 14px;
-            weight: 500;
-        };
-        &::before {
-            border-radius: 0;
-            background: $purple-color;
-        }
-        &::after {
-            border-radius: 0;
-            background: $purple-color;
-        }
-        &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle {
-            color: $white-color;
-            background-color: $light-green-color;
-            border-color: $light-green-color;
-        }
-        &:not(:disabled):not(.disabled).active:focus, &:not(:disabled):not(.disabled):active:focus, .show>&.dropdown-toggle:focus {
-            box-shadow: 5px 5px 5px #e9caf5;
-        }
-        &:focus {
-            color: $white-color;
-        }
-        &:hover, &:focus {
-            box-shadow: 5px 5px 5px #e9caf5;
-        }
-    }
-}
 /*form control*/
 .form-group {
     margin-bottom: 18px;
@@ -585,35 +475,7 @@ Navbar CSS
                     right: 4px;
                 }
             }
-            .btn {
-                &.btn-light {
-                    background: transparent;
-                    border: 2px dashed #cdf1d8;
-                    padding: 12px 33px;
-                    margin: {
-                        right: 10px;
-                    }
-                    &:focus {
-                        color: $black-color !important
-                    }
-                    &:hover, &:focus {
-                        color: $white-color;
-                        border-color: $light-green-color;
-                    }
-                    &::after, &::before {
-                        background: $light-green-color;
-                    }
-                }
-                &.btn-primary {
-                    background: $purple-color;
-                    box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
-
-                    &::after, &::before {
-                        background: $light-green-color;
-                        box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
-                    }
-                }
-            }
+        
         }
     }
 }
@@ -2367,14 +2229,7 @@ Fun Facts CSS
             background: $light-green-color;
         }
     }
-    .btn-primary {
-        background: $purple-color;
-        box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
-
-        &:hover, &:focus {
-            box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
-        }
-    }
+  
 }
 
 /*==========================================
@@ -2491,15 +2346,7 @@ Pricing CSS
                 color: $white-color;
             }
         }
-        .btn-primary {
-            background: $purple-color;
-            box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
-
-            &::after, &::before {
-                background: $light-green-color;
-                box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
-            }
-        }
+        
     }
 }
 .single-pricing-table {
@@ -2571,15 +2418,7 @@ Pricing CSS
         }
     }
     &.active-plan {
-        .btn-primary {
-            background: $purple-color;
-            box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
-
-            &::after, &::before {
-                background: $light-green-color;
-                box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
-            }
-        }
+        
     }
 }
 .tab {
@@ -2706,34 +2545,7 @@ Pricing CSS
             box-shadow: unset !important;
             transform: unset !important;
         }
-        .btn-primary {
-            border-radius: 30px;
-            background: linear-gradient(to right top, #a3a3a3, #9a9a9a, #909090, #878787, #7e7e7e);
-            text-transform: capitalize;
-            padding: 11px 30px;
-            font: {
-                weight: 500;
-            };
-            &::after {
-                border-radius: 30px;
-                background: $light-green-color;
-                width: 100%;
-                opacity: 1;
-                visibility: visible;
-            }
-            &::before {
-                display: none;
-            }
-            &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, & .show > &.dropdown-toggle {
-                background: linear-gradient(to right top, #a3a3a3, #9a9a9a, #909090, #878787, #7e7e7e);
-            }
-            &:hover, &:focus {
-                &::after {
-                    opacity: 0;
-                    visibility: hidden;
-                }
-            }
-        }
+    
     }
     .pricing-features {
         margin-bottom: 0;
@@ -3136,15 +2948,7 @@ Ready To Talk CSS
             background: $white-color;
         }
     }
-    .btn-primary {
-        background: $purple-color;
-        box-shadow: 0 5px 20px 0 rgba(198, 121, 227, 0.25);
-
-        &:hover, &:focus {
-            color: $black-color;
-            box-shadow: 0 5px 20px 0 rgba(68, 206, 111, 0.25);
-        }
-    }
+   
     span {
         a {
             margin-left: 15px;
@@ -4957,19 +4761,6 @@ CTA CSS
         position: relative;
         top: -15px;
 
-        .btn-primary {
-            background: $purple-color;
-            box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
-
-            &::after, &::before {
-                background: $white-color;
-                box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
-            }
-            &:hover, &:focus {
-                color: $light-green-color;
-            }
-        }
-    }
 }
 
 /*================================================
@@ -7960,15 +7751,7 @@ Shop Details CSS
         .buy-btn {
             margin-top: 20px;
 
-            .btn-primary {
-                background: $purple-color;
-                box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
-
-                &::after, &::before {
-                    background: $light-green-color;
-                    box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
-                }
-            }
+        
         }
     }
     .custom-payment-options {
@@ -8619,5 +8402,5 @@ Checkout CSS
             display: block;
             margin-top: 25px;
         }
-    }
+    }}
 }
